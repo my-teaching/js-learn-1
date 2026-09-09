@@ -6,10 +6,10 @@ const student = require('./student-template.js');
 function test(name, fn) {
   try {
     fn();
-    console.log(`✓ ${name}`);
+    console.log(`${name}`);
   } catch (error) {
-    console.error(`✗ ${name}`);
-    console.error(`  ${error.message}`);
+    console.error(`${name}`);
+    console.error(`${error.message}`);
     process.exitCode = 1;
   }
 }
